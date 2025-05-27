@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: hello-world
 spec:
-  replicas: 1
+  replicas: {{ .Values.replicaCount }}
   selector:
     matchLabels:
       app: hello-world
@@ -12,6 +12,7 @@ spec:
       labels:
         app: hello-world
     spec:
+      serviceAccountName: {{ .Values.serviceAccount.name }}
       containers:
         - name: hello-world
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
