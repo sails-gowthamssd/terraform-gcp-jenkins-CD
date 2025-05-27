@@ -4,8 +4,8 @@ pipeline {
   environment {
     GOOGLE_APPLICATION_CREDENTIALS = "${WORKSPACE}\\terraform-sa.json"
     PROJECT_ID = "my-kubernetes-project-456905"
-    CLUSTER_NAME = "jenkins-hello-cluster"
-    REGION = "us-central1"
+    CLUSTER_NAME = "hello-jenkins-gke"
+    REGION = "us-central1-b"
     K8S_NAMESPACE = "default"
   }
 
