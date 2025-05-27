@@ -12,7 +12,7 @@ pipeline {
   stages {
     stage('Checkout Helm Charts') {
       steps {
-        git url: 'https://github.com/your-org/helm-charts.git', branch: 'main'
+        git url: 'https://github.com/sails-gowthamssd/terraform-gcp-jenkins-CD.git', branch: 'main'
       }
     }
 
