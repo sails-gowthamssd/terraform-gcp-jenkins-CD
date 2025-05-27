@@ -1,0 +1,7 @@
+image:
+  repository: us-central1-docker.pkg.dev/my-kubernetes-project-456905/hello-world-jenkins-repo/hello-world
+  tag: latest
+
+service:
+  type: LoadBalancer
+  port: 80
