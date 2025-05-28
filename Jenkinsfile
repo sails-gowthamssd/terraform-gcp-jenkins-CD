@@ -2,6 +2,7 @@ pipeline {
   agent any
 
   environment {
+    BUILD_TAG = "${params.BUILD_TAG}"
     GOOGLE_APPLICATION_CREDENTIALS = "${WORKSPACE}\\terraform-sa.json"
     PROJECT_ID = "my-kubernetes-project-456905"
     CLUSTER_NAME = "hello-jenkins-gke"
