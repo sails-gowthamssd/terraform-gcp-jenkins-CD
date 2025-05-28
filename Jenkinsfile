@@ -37,7 +37,7 @@ pipeline {
     stage('Helm Deploy') {
       steps {
         dir('helm/hello-world') {
-          bat 'helm upgrade --install hello-world . --set image.tag=${BUILD_TAG} --namespace %K8S_NAMESPACE%'
+          bat 'helm upgrade --install hello-world . --set image.tag=%BUILD_TAG% --namespace %K8S_NAMESPACE%'
         }
       }
     }
