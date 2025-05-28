@@ -2,7 +2,7 @@ replicaCount: 1
 
 image:
   repository: us-central1-docker.pkg.dev/my-kubernetes-project-456905/hello-world-jenkins-repo/hello-world
-  tag: latest
+  tag: build-6
   pullPolicy: Always
 
 service:
